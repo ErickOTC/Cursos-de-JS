@@ -54,3 +54,23 @@ console.log(arr);
     console.log(arr);
     console.log(hobbits);
     console.log(arrFinal);
+
+    //concat
+        //concatenar elementos
+    const sociedade = hobbits.concat(arrFinal, "boromir", "Erick")
+    console.log(sociedade);
+
+//Substituição de elementos
+    //splice
+    const elementosRemovidos = sociedade.splice(3 /*-1-*/, 1 /*-2-*/, "Gandalf o Cinzento" /*-3-*/, 1, 3, true);
+    // 1- Apartir do elemento 4
+    // 2- Excluir um total de 1 elementos
+    // 3- Colocar no lugar "Gandalf o Cinzento"
+    console.log(sociedade);
+    console.log(elementosRemovidos); //devolve uma array, mesmo que seja de um elemento
+
+//Iterar sobre os elementos
+for (let index = 0; index < sociedade.length; index++) {
+    const elemento = sociedade[index];
+    console.log(`O (${elemento}) se encontra na posição (${index})`)
+}
