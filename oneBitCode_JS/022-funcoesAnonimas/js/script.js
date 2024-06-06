@@ -13,7 +13,7 @@ operacao = function (a, b) {
     return a - b
 }
 
-console.log(operacao(36,12))
+console.log(operacao(36,12));
 //---------------ex01---------------//
 
 //perigo das funções anônimas

@@ -1,0 +1,15 @@
+.escalarJogador{
+    display: flex;
+    flex-direction: column;
+}
+
+.campoDeInformação{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+input{
+    width: 200px;
+    margin-inline: 5px;
+}

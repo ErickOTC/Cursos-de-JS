@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escalação do time</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <h1>Escalação do time</h1>
+    <hr>
+    <h2>Escalar Jogador</h2>
+    <div class="escalarJogador">
+        <div class="campoDeInformação">
+            <label for="position">Posição:</label>
+            <input type="text" name="position" id="position">
+        </div>
+
+        <div class="campoDeInformação">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+
+        <div class="campoDeInformação">
+            <label for="numero">Número:</label>
+            <input type="text" name="numero" id="numero">
+        </div>
+    </div>
+    <button onclick="addPlayer()">Escalar</button>
+
+    <h2>Remover Jogador</h2>
+    <div class="campoDeInformação">
+        <label for="numberToRemove">Número:</label>
+        <input type="text" name="numberToRemove" id="number">
+    </div>
+    <button onclick="removePlayer()">Remover</button>
+
+    <h2>Time</h2>
+    <ul id="teamList"></ul>
+
+    <script defer src="src/js/script.js"></script>
+</body>
+</html>

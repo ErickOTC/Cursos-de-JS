@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhando Com Formulários</title>
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <h1>Trabalhando Com Formulários</h1>
+  <hr>
+
+  <h2>Montar Pedido</h2>
+
+  <form id="formulario">
+
+    <div class="caixa">
+        <label for="nome">Nome:</label>
+        <br>
+        <input type="text" name="nome" id="nome">
+    </div>
+
+    <div class="caixa">
+        <label for="endereco">Endereço de Entrega:</label>
+        <br>
+        <input type="text" name="endereco" id="endereco">
+    </div>
+
+    <div class="caixa">
+        <label for="tipoDePao">Tipo de Pão</label>
+        <br>
+        <select name="tipoDePao" id="tipoDePao">
+          <option selected disabled>Selecione uma opção...</option>
+          <option value="3 queijos">3 queijos</option>
+          <option value="Parmesão e orégano">Parmesão e orégano</option>
+          <option value="9 grãos">9 grãos</option>
+          <option value="Italiano branco">Italiano branco</option>
+          <option value="Granola salgada">Granola salgada</option>
+          <option value="Manteiga temperada">Manteiga temperada</option>
+        </select>
+    </div>
+
+    <div class="caixa">
+        <label for="Principal">Principal:</label>
+        <br>
+        <input type="radio" name="Principal" id="Principal1" value="Carne">
+        <label for="Principal1">Carne</label>
+        <input type="radio" name="Principal" id="Principal2" value="Frango">
+        <label for="Principal2">Frango</label>
+        <input type="radio" name="Principal" id="Principal3" value="Vegano">
+        <label for="Principal3">Vegano</label>
+    </div>
+
+    <div class="caixa">
+        <label for="queijo">Queijo:</label>
+        <br>
+        <input type="checkbox" name="queijo" id="queijo1" value="Parmesão">
+        <label for="queijo1">Parmesão</label>
+        <input type="checkbox" name="queijo" id="queijo2" value="Prato">
+        <label for="queijo2">Prato</label>
+        <input type="checkbox" name="queijo" id="queijo3" value="Reino">
+        <label for="queijo3">Reino</label>
+        <input type="checkbox" name="queijo" id="queijo4" value="Rockfort Mineiro">
+        <label for="queijo4">Rockfort Mineiro</label>
+        <input type="checkbox" name="queijo" id="queijo5" value="Cheddar">
+        <label for="queijo5">Cheddar</label>
+    </div>
+
+    <div class="caixa">
+        <label for="salada">Salada:</label>
+        <br>
+        <input type="checkbox" name="salada" id="salada1" value="Alface">
+        <label for="salada1">Alface</label>
+        <input type="checkbox" name="salada" id="salada2" value="Tomate">
+        <label for="salada2">Tomate</label>
+        <input type="checkbox" name="salada" id="salada3" value="Cebola">
+        <label for="salada3">Cebola</label>
+        <input type="checkbox" name="salada" id="salada4" value="Picles">
+        <label for="salada4">Picles</label>
+    </div>
+
+    <div class="caixa">
+        <label for="molho">Molhos:</label>
+        <br>
+        <input type="checkbox" name="molho" id="molho1" value="Ketchup">
+        <label for="molho1">Ketchup</label>
+        <input type="checkbox" name="molho" id="molho2" value="Tasty">
+        <label for="molho2">Tasty</label>
+        <input type="checkbox" name="molho" id="molho3" value="Barbecue">
+        <label for="molho3">Barbecue</label>
+        <input type="checkbox" name="molho" id="molho4" value="Mostarda">
+        <label for="molho4">Mostarda</label>
+        <input type="checkbox" name="molho" id="molho5" value="Cheddar">
+        <label for="molho5">Cheddar</label>
+    </div>
+
+    <div class="caixa">
+        <label for="acompanhamento">Acompanhamentos:</label>
+        <br>
+        <input type="checkbox" name="acompanhamento" id="acompanhamento1" value="Onion rings">
+        <label for="acompanhamento1">Onion rings</label>
+        <input type="checkbox" name="acompanhamento" id="acompanhamento2" value="Bacon">
+        <label for="acompanhamento2">Bacon</label>
+        <input type="checkbox" name="acompanhamento" id="acompanhamento3" value="Cebola crispy">
+        <label for="acompanhamento3">Cebola crispy</label>
+    </div>
+
+    <div class="caixa">
+        <label for="observacao">Observações:</label>
+        <br>
+        <textarea name="observacao" id="observacao" cols="30" rows="6"></textarea>
+    </div>
+
+    <button type="submit">Fechar Pedido</button>
+  </form>
+
+  <script src="src/js/script.js"></script>
+</body>
+</html>
